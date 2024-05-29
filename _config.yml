@@ -1,0 +1,143 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 盧瞳Blog
+subtitle: '先思考,后编程'
+description: '极简的个人技术博客'
+keywords: ''
+author: '盧瞳'
+language: zh-CN
+timezone: 'Asia/Shanghai'
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://2061360308.github.io/blog
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link:
+  enable: true # Open external links in new tab
+  field: site # Apply to the whole site
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: true # 自动生成同名资源文件夹
+# hexo-renderer-marked 3.1.0 引入了一个新的选项，其允许你无需使用 asset_img 标签插件就可以在 markdown 中嵌入图片
+marked: 
+  prependRoot: true
+  postAsset: true
+relative_link: false
+future: true
+highlight:
+  enable: false
+  # line_number: true
+  # auto_detect: true
+  # tab_replace: ''
+  # wrap: true
+  # hljs: false
+prismjs:
+  enable: false
+  # preprocess: true
+  # line_number: true
+  # tab_replace: ''
+
+syntax_highlighter: false
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'mtime'
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+include:
+exclude:
+ignore:
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: keep
+
+# 自动管理分类
+auto_category:
+ enable: true
+ depth:
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+#deploy:
+##  type: ''
+
+# 部署到腾讯云cos存储
+
+
+# 搜索配置    
+algolia:
+  appId: 68EZJSYL8I #Your appId
+  apiKey: ab7cf0507e9353cba0e9e12fa29cf08e #Your apiKey
+  adminApiKey: f53fad757b352bfc663b9bb75eb711fc #Your adminApiKey
+  chunkSize: 5000
+  indexName: shokaX #"shokaX"
+  fields:
+    - title #必须配置
+    - path #必须配置
+    - categories #推荐配置
+    
+search:
+  path: search.xml
+  field: all
+# URL
+image_server_url: http://some.bkt.clouddn.com/
+
+
+asset:
+  enable: true
+  
+

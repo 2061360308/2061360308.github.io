@@ -1,0 +1,31 @@
+- site: I Am I
+  owner: I Am I
+  url: https://5ime.cn
+  desc: 永远相信美好的事情即将发生
+  image: https://cdn.jsdelivr.net/gh/5ime/img/avatar.jpg
+  color: "#e9546b"
+- site: 洛屿的小站
+  owner: 洛屿
+  url: https://www.drluo.top/
+  desc: 嗨，靓仔，今天也要有个好心情哦！
+  image: https://gravatar.loli.top/avatar/6fa57e21db3ba5961f18a8ae75d0a081?s=200&r=g&d=retro
+  color: "#49b1f5"
+- site: 千千
+  owner: 千千
+  url: https://www.dreamwings.cn
+  desc: 继续踏上旅途，在没有你的春天……
+  image: https://www.dreamwings.cn/wp-content/uploads/2018/06/806e52a2e2b9ff4bd2c23140df75cc1f.jpeg
+  color: "#75baff"
+- site: 愧怍的小站
+  owner: 愧怍
+  url: https://kuizuo.cn/
+  desc: 道阻且长，行则将至
+  image: https://kuizuo.cn/img/logo.png
+  color: "#05a1ec"
+- site: Wener Live & Life
+  owner: wener
+  url: https://wener.me/
+  desc: Passion I've found
+  image: https://wener.me/img/wener-logo-head.svg
+  color: "#64b5f6"
+  

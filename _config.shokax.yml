@@ -1,0 +1,161 @@
+markdown:
+  render: # 渲染器设置
+    html: false # 过滤 HTML 标签
+    xhtmlOut: true # 使用 '/' 来闭合单标签 （比如 <br />）。
+    breaks: true # 转换段落里的 '\n' 到 <br>。
+    linkify: true # 将类似 URL 的文本自动转换为链接。
+    typographer:
+    quotes: '“”‘’'
+  plugins: # markdown-it 插件设置
+    - plugin:
+        name: markdown-it-toc-and-anchor
+        enable: true
+        options: # 文章目录以及锚点应用的 class 名称，shoka 系主题必须设置成这样
+          tocClassName: 'toc'
+          anchorClassName: 'anchor'
+    - plugin:
+        name: markdown-it-multimd-table
+        enable: true
+        options:
+          multiline: true
+          rowspan: true
+          headerless: true
+    - plugin:
+        name: ./markdown-it-furigana
+        enable: true
+        options:
+          fallbackParens: "()"
+    - plugin:
+        name: ./markdown-it-spoiler
+        enable: true
+        options:
+          title: "你知道得太多了"
+
+autoprefixer:
+  exclude:
+    - '*.min.css'
+
+minify: # 文件压缩
+  html:
+    enable: true
+    exclude: # 排除 hexo-feed 用到的模板文件
+      - '**/json.ejs'
+      - '**/atom.ejs'
+      - '**/rss.ejs'
+  css:
+    enable: true
+    exclude:
+      - '**/*.min.css'
+  js:
+    enable: true
+    mangle:
+      toplevel: true #如果js压缩错误请删除此行
+    output:
+    compress:
+      ecma: 2018
+    exclude:
+      - '**/*.min.js'
+
+# 静态资源和标题
+statics: "/" # 静态文件根目录，可用于CDN加速
+assets: "assets" # 图片资源存放目录
+css: "css" # css存放目录(不建议改动)
+js: "js" # js存放目录(不建议改动)
+alternate: Come On
+
+# 菜单
+menu:
+  home: / || home
+  about: /system/about  || user
+#   default: / || user
+#   aboutsite: /system/about/  || user
+#   admiration: /admiration/ || coffee
+  笔记: /note/skill || at
+  posts:
+    default: / || feather
+    archives: /archives/ || list-alt
+    categories: /categories/ || th
+    tags: /tags/ || tags
+  friends: /system/friends || heart
+  留言板: /system/message || paper-plane
+
+social:
+   github: https://github.com/2061360308 || github || "#191717"
+
+# 底部设置
+widgets:
+  random_posts: true  # 随机文章
+  recent_comments: false  # 显示最近评论
+
+# 字数和阅读时间统计
+# 页尾全站统计
+footer:
+  since: 2023  # 开始时间
+  count: true  # 开启
+# 文章界面统计
+post:
+  count: true   # 开启
+
+# 夜间模式
+darkmode: false # true
+
+
+# 是否显示页面加载动画 loading-cat
+loader:
+  start: false # 当初次打开页面时，显示加载动画
+  switch: false # tab 切换到其他页面时，显示加载动画
+
+# 单击页面的烟花效果
+fireworks:
+  enable: true # 是否启用
+  color: # 烟花颜色
+    - "rgba(255,182,185,.9)"
+    - "rgba(250,227,217,.9)"
+    - "rgba(187,222,214,.9)"
+    - "rgba(138,198,209,.9)"
+
+# iconfont
+iconfont: "1832207_c8i9n1ulxlt"
+
+algolia:
+  appId: 68EZJSYL8I #Your appId
+  apiKey: ab7cf0507e9353cba0e9e12fa29cf08e #Your apiKey
+  adminApiKey: f53fad757b352bfc663b9bb75eb711fc #Your adminApiKey
+  chunkSize: 5000
+  indexName: shokaX #"shokaX"
+  fields:
+    - title #必须配置
+    - path #必须配置
+    - categories #推荐配置
+    - content:strip:truncate,0,2000
+    - gallery
+    - photos
+    - tags
+    - friends
+
+
+waline:
+  enable: true # 是否启用
+  serverURL: "https://waline.1think2program.cn/" # waline服务端地址
+  lang: "zh-CN" # 评论界面语言
+  locale: {} # 本地化替换，详见waline文档
+  emoji: # 表情包，默认为waline官方配置
+    - https://unpkg.com/@waline/emojis@1.0.1/weibo
+    - https://unpkg.com/@waline/emojis@1.0.1/alus
+    - https://unpkg.com/@waline/emojis@1.0.1/bilibili
+    - https://unpkg.com/@waline/emojis@1.0.1/qq
+    - https://unpkg.com/@waline/emojis@1.0.1/tieba
+    - https://unpkg.com/@waline/emojis@1.0.1/tw-emoji
+  meta: # 评论可以填写的项目
+    - nick
+    - mail
+    - link
+  requiredMeta: # 评论必须填写的项目
+    - nick
+    - mail
+  wordLimit: 200 # 评论字数上限(不建议为0)
+  pageSize: 10 # 每页显示评论条数
+  pageview: true # 页面浏览量显示
+
+asset:
+  enable: true
