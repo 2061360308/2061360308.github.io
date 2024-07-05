@@ -649,6 +649,11 @@ hexo-server@^3.0.0:
     picocolors "^1.0.0"
     serve-static "^1.14.1"
 
+hexo-theme-keep@^4.1.5:
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/hexo-theme-keep/-/hexo-theme-keep-4.1.5.tgz#177f9b40c53bd2d24835bdaf5316434f9eecb1ed"
+  integrity sha512-3Rmh2BPynUjiE6Vfl1xQBDaUcrOPLOmiCiTZGBPbJNscHpRxiCGPrHEV9q9k8kacXKIQpNLKTm13cvhqKfPUmg==
+
 hexo-theme-landscape@^1.0.0:
   version "1.0.0"
   resolved "https://mirrors.huaweicloud.com/repository/npm/hexo-theme-landscape/-/hexo-theme-landscape-1.0.0.tgz#43a549ebb2bea73196200ee4397feb764131a481"
@@ -667,10 +672,10 @@ hexo-util@^3.0.1, hexo-util@^3.1.0, hexo-util@^3.3.0:
     prismjs "^1.29.0"
     strip-indent "^3.0.0"
 
-hexo@^7.0.0:
-  version "7.2.0"
-  resolved "https://mirrors.huaweicloud.com/repository/npm/hexo/-/hexo-7.2.0.tgz#0c2b0eeb3f16c557638b6dbd5956a425460d7d0f"
-  integrity sha512-RYIzl7jfG0i2jH/k5IZg4C1anyHfmKHNUsBKIn9LU0V3iQ0WQrwuOLFDJwaZDenqmzHYJhAVCGAkrBDfF/IlVg==
+hexo@^7.2.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/hexo/-/hexo-7.3.0.tgz#a9a487874c5ed71c22e91e32dd5d825709a1474f"
+  integrity sha512-dOe8mzBKrvjubW5oBmyhcnQDpC+M2xmAMLae5K+o+SkHxyvAhShkS2VQZoTsOLIJKY6xilv7dzCjCvE7ol/NHQ==
   dependencies:
     abbrev "^2.0.0"
     archy "^1.0.0"
