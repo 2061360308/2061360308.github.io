@@ -39,8 +39,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
       hexo-theme-keep:
-        specifier: ^4.2.2
-        version: 4.2.2
+        specifier: ^4.2.3
+        version: 4.2.3
       hexo-theme-landscape:
         specifier: ^1.0.0
         version: 1.0.0
@@ -417,8 +417,8 @@ packages:
     resolution: {integrity: sha512-u4s0ty9Aew6jV+a9oMrXBwhrRpUQ0U8PWM/88a5aHgDru58VY81mVrxOFxs788NAsWQ8OvsJtF5m7mnXoRnSIA==}
     engines: {node: '>=12.13.0'}
 
-  hexo-theme-keep@4.2.2:
-    resolution: {integrity: sha512-PW0rlsMQG4edrn1V3n/7vbJhkyjwgaj5Gzq4II1ls51iw2fiVFQiG3qaBTuGab8eO/yxeXuSQxetCcs9KWNjPQ==}
+  hexo-theme-keep@4.2.3:
+    resolution: {integrity: sha512-lTp9W8O7b19TeDIWBqe4popPQY/COsyR51l8Le9STPCPKin/3nbaL0lKIXwT7aV7cV+VC1RkAvph2pDaFXQfpQ==}
 
   hexo-theme-landscape@1.0.0:
     resolution: {integrity: sha512-bWQJWMqQI78wWiJPQZq5pJBH20TM442ShCaHGRetuEgMraxH0OKxB3NTupJzNEkzEk8DV2yrdizkXdKN6i501A==}
@@ -1281,7 +1281,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  hexo-theme-keep@4.2.2: {}
+  hexo-theme-keep@4.2.3: {}
 
   hexo-theme-landscape@1.0.0: {}
 
