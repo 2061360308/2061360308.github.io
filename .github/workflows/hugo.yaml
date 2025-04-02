@@ -239,6 +239,8 @@ jobs:
                   });
 
                   const result = await response.json();
+
+                  conse.log("请求结果", result)
                   
                   if (!response.ok) {
                       throw new Error(\`API请求失败: \${JSON.stringify(result.Response)}\`);
