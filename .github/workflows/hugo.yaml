@@ -157,6 +157,7 @@ jobs:
           }
 
           async function purgeHostname() {
+              console.log("EDGEONE_HOSTNAMES", process.env.EDGEONE_HOSTNAMES)
               try {
                   // 环境变量配置
                   const SECRET_ID = process.env.TENCENT_SECRET_ID;
