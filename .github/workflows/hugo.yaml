@@ -252,7 +252,7 @@ jobs:
                   console.log('Hostname刷新成功:', {
                       JobId: result.Response.JobId,
                       RequestId: result.Response.RequestId
-                  });
+                  }, "hostnames:", HOSTNAMES);
 
               } catch (error) {
                   // 网络错误处理
