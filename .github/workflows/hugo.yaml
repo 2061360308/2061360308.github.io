@@ -278,8 +278,8 @@ jobs:
 
       - name: 执行Hostname缓存刷新
         env:
-          TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
+          TENCENT_SECRET_ID: ${{ vars.TENCENT_SECRET_ID }}
           TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
-          EDGEONE_ZONE_ID: ${{ secrets.EDGEONE_ZONE_ID }}
-          EDGEONE_HOSTNAMES: ${{ secrets.EDGEONE_HOSTNAMES }}
+          EDGEONE_ZONE_ID: ${{ vars.EDGEONE_ZONE_ID }}
+          EDGEONE_HOSTNAMES: ${{ vars.EDGEONE_HOSTNAMES }}
         run: node purge-edgeone-hostname.js
