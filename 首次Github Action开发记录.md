@@ -334,7 +334,7 @@ npm run release
 git push --follow-tags origin main
 ```
 
-## 与 GitHub Marketplace 集成
+#### 与 GitHub Marketplace 集成
 
 规范的提交和版本管理使你的 Action 在 GitHub Marketplace 中更专业：
 
@@ -342,7 +342,7 @@ git push --follow-tags origin main
 2. CHANGELOG.md 会显示在 Marketplace 页面，方便用户了解变更
 3. 版本号遵循 SemVer，用户可以根据版本号判断兼容性
 
-## 示例 CHANGELOG 输出
+#### 示例 CHANGELOG 输出
 
 运行 standard-version 后生成的 CHANGELOG.md 示例：
 
