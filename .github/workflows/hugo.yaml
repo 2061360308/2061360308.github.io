@@ -50,10 +50,10 @@ jobs:
       - name: 检出main分支的content文件夹到./content
         uses: actions/checkout@v4
         with:
-        ref: main
-        path: ./temp-main # 先检出到临时目录
-        submodules: recursive
-        fetch-depth: 0
+          ref: main
+          path: ./temp-main # 先检出到临时目录
+          submodules: recursive
+          fetch-depth: 0
       - name: 复制content文件夹到目标位置
         run: |
           # 确保目标目录存在
