@@ -3,7 +3,7 @@ title: 异地组网开黑之ZeroTier
 data: 2026-02-15T22:21:37+08:00
 lastmod:  2026-02-15T22:21:37+08:00
 categories:
-  - 折腾
+  - 折腾笔记
 tags:
   - ZeroTier
   - 网络
